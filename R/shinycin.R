@@ -1,4 +1,4 @@
-shinycin <- function (out, export = FALSE, main.label = "bigKRLS estimates", 
+shiny <- function (out, export = FALSE, main.label = "bigKRLS estimates", 
     plot.label = NULL, xlabs = NULL, font_size = 20, hline = 0, 
     shiny.palette = c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3", 
         "#FF7F00", "#FFFF33", "#A65628", "#F781BF", "#999999")) 
@@ -26,16 +26,15 @@ shinycin <- function (out, export = FALSE, main.label = "bigKRLS estimates",
                 size = 0.1, color = "grey")
             P = P + geom_smooth(aes(x = selectedData()[["x"]], 
                 y = selectedData()[["derivatives"]]), method = "loess") + 
-                xlab(expression("C"["in"]))
-            P = P + ylab(expression("LFT: marginal Effects of C"[" in"], input$dydxp))
+                xlab(expression('C'["in"]))
+            P = P + ylab(paste("LFT: marginal effects"))
             P = P + geom_hline(aes(yintercept = hline))
             P = P + theme_minimal(base_size = font_size)
             P = P + theme(panel.background = element_blank(), 
-                panel.border = element_blank(), panel.grid.major = element_blank(), 
-                panel.grid.minor = element_blank(), plot.background = element_blank())
+                panel.border = element_blank(), panel.grid.minor = element_blank(), plot.background = element_blank())
             P = P + labs(title = plot.label)
-			P = P + scale_x_continuous(breaks=seq(5, 195, by=15))
-			P
+			P = P + scale_x_continuous(breaks = seq(5, 200, by=30))
+            P
         })
     })
     bigKRLS_ui <- shinyUI(fluidPage(titlePanel(main.label), sidebarPanel(selectInput("dydxp", 
