@@ -1,4 +1,4 @@
-shin <- function (out, export = FALSE, main.label = "bigKRLS estimates", 
+shinycin <- function (out, export = FALSE, main.label = "bigKRLS estimates", 
     plot.label = NULL, xlabs = NULL, font_size = 20, hline = 0, 
     shiny.palette = c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3", 
         "#FF7F00", "#FFFF33", "#A65628", "#F781BF", "#999999")) 
