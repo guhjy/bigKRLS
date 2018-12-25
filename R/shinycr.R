@@ -33,7 +33,7 @@ shiny <- function (out, export = FALSE, main.label = "bigKRLS estimates",
             P = P + theme(panel.background = element_blank(), 
                 panel.border = element_blank(), panel.grid.minor = element_blank(), plot.background = element_blank())
             P = P + labs(title = plot.label)
-			P = P + scale_x_continuous(breaks = seq(1, 7, by=1))
+			P = P + scale_x_continuous(breaks = seq(0.8, 7, by=1))
             P
         })
     })
