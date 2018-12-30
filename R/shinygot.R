@@ -27,7 +27,7 @@ shiny <- function (out, export = FALSE, main.label = "bigKRLS estimates",
             P = P + geom_smooth(aes(x = selectedData()[["x"]], 
                 y = selectedData()[["derivatives"]]), method = "loess") + 
                 xlab(input$xp)
-            P = P + ylab(paste("Log(GOT): marginal Effects", input$dydxp))
+            P = P + ylab(paste("Log(GOT): marginal effects"))
             P = P + geom_hline(aes(yintercept = hline))
             P = P + theme_minimal(base_size = font_size)
             P = P + theme(panel.background = element_blank(), 
