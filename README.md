@@ -1,4 +1,6 @@
 # bigKRLS
+[Messy Data, Robust Inference? Navigating Obstacles to Inference with bigKRLS](http://www.citeulike.org/user/guhjy/article/14213170)
+
 [![Travis-CI Build Status](https://travis-ci.org/rdrr1990/bigKRLS.svg?branch=master)](https://travis-ci.org/rdrr1990/bigKRLS)
 [![Coverage Status](https://img.shields.io/codecov/c/github/rdrr1990/bigKRLS/master.svg)](https://codecov.io/github/rdrr1990/bigKRLS?branch=master) [![cran checks](https://cranchecks.info/badges/summary/bigKRLS)](https://cranchecks.info/pkgs/bigKRLS) [![Rdoc](http://www.rdocumentation.org/badges/version/bigKRLS)](http://www.rdocumentation.org/packages/bigKRLS) ![](http://cranlogs.r-pkg.org/badges/grand-total/bigKRLS)
  
